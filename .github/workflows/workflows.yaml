@@ -35,5 +35,4 @@ jobs:
 
       - name: check contents of docker file
         run: |
-          docker run -it xemuliam/dbt:latest /bin/bash
-          ls /
+          dbt run
