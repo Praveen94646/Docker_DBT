@@ -19,7 +19,7 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     container:
-      image: xemuliam/dbt:latest
+      image: redgate/flyway:latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -33,6 +33,6 @@ jobs:
       - name: current directory
         run: pwd  
 
-      - name: check contents of docker file
+      - name: check if flyway runs
         run: |
-          dbt run
+          flyway --help
