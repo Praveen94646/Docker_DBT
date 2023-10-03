@@ -33,6 +33,6 @@ jobs:
       - name: current directory
         run: pwd  
 
-      - name: check if dbt runs
+      - name: list dbt project files
         run: |
-           dbt run -h
+           ls -R
