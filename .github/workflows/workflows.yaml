@@ -32,9 +32,6 @@ jobs:
 
       - name: current directory
         run: pwd  
-      
-      - name: Java version
-        run: java --version
 
       - name: list
         run: ls
