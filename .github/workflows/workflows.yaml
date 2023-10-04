@@ -28,15 +28,15 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: change directory
-        working-directory: ./dbt_github
         run: cd $GITHUB_WORKSPACE
 
       - name: current directory
         run: pwd  
 
       - name: showing docs
+        working-directory: ./dbt_github
         run: |
           ls
-          dbt seed 
-          dbt test
-          dbt docs generate
+          dbt seed --profiles-dir /__w/Docker_DBT/Docker_DBT/dbt_github/.dbt
+          dbt test --profiles-dir /__w/Docker_DBT/Docker_DBT/dbt_github/.dbt
+          dbt docs generate --profiles-dir /__w/Docker_DBT/Docker_DBT/dbt_github/.dbt
