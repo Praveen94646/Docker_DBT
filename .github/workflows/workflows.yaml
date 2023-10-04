@@ -39,6 +39,9 @@ jobs:
           dbt seed --profiles-dir /__w/Docker_DBT/Docker_DBT/dbt_github/.dbt
           dbt docs generate --profiles-dir /__w/Docker_DBT/Docker_DBT/dbt_github/.dbt
       
+      - name: change directory
+        run: cd $GITHUB_WORKSPACE
+
       - name: install git
         run: apt-get update && apt-get install -y git
 
