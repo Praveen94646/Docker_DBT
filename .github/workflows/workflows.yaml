@@ -40,7 +40,9 @@ jobs:
           dbt docs generate --profiles-dir /__w/Docker_DBT/Docker_DBT/dbt_github/.dbt
       
       - name: change directory
-        run: cd $GITHUB_WORKSPACE
+        run: |
+          cd /$GITHUB_WORKSPACE/
+          pwd
 
       - name: install git
         run: |
