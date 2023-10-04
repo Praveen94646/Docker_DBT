@@ -74,20 +74,30 @@ jobs:
     container:
       image: xemuliam/dbt
     # Steps represent a sequence of tasks that will be executed as part of the job
+    
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+
       # Runs a single command using the runners shell
-    #   - name: change directory
-    #     run: cd $GITHUB_WORKSPACE
-      - name: Dbt version
-        run: dbt --version
+      - name: current directory
+        run: pwd
+
       - name: Install git
         run: |
             ls
             apt-get update
             apt-get install -y git
             git --version
+
+      - name: showing docs
+        # working-directory: ./dbt_github
+        run: |
+          ls
+          dbt seed 
+          dbt docs generate
+
+
       # - name: DBT auto add seeds
       #   run: |
       #       pwd
