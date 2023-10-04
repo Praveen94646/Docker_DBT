@@ -34,9 +34,9 @@ jobs:
         run: pwd  
 
       - name: showing docs
-        working-directory: ./dbt_github
+        # working-directory: ./dbt_github
         run: |
           ls
-          dbt seed --profiles-dir /__w/Docker_DBT/Docker_DBT/.dbt
+          dbt seed --profiles-dir /__w/Docker_DBT/Docker_DBT/dbt_github/.dbt
           dbt test
           dbt docs generate
