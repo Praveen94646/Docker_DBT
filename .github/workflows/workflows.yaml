@@ -31,13 +31,11 @@ jobs:
         run: cd $GITHUB_WORKSPACE
 
       - name: current directory
-        run: pwd  
+        run: cd /github/home  
 
       - name: showing docs
         # working-directory: ./dbt_github
         run: |
-          ls
-          cd /github/home
           ls
           dbt seed 
           dbt docs generate 
