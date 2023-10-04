@@ -31,14 +31,14 @@ jobs:
         run: cd $GITHUB_WORKSPACE
 
       - name: change directory to the dbt folder
-        run: cd /__w/Docker_DBT/Docker_DBT/dbt_github
+        run: cd dbt_github
 
       - name: current directory
         run: pwd  
 
       - name: showing doc
         run: |
-          dbt help
+          cd /__w/Docker_DBT/Docker_DBT/dbt_github dbt help
           dbt seed
           dbt test
           dbt docs generate
