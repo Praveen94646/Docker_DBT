@@ -484,3 +484,303 @@ with tables as (
 [0m14:02:00.533639 [debug] [MainThread]: Connection 'AIRBNB.information_schema' was properly closed.
 [0m14:02:00.533639 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000223CDDAC370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000223CE72B670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000223CE79B280>]}
 [0m14:02:00.533639 [debug] [MainThread]: Flushing usage events
+[0m14:10:24.351183 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB9C466280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB9E3DEFD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB9E3DE7C0>]}
+
+
+============================== 14:10:24.358910 | bdd8e998-47a1-442f-8444-a24de0bf1490 ==============================
+[0m14:10:24.358910 [info ] [MainThread]: Running with dbt=1.5.7
+[0m14:10:24.359922 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\pvenkatesh\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\pvenkatesh\\Desktop\\Git_Folder\\Docker_DBT\\dbt_github\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m14:10:25.467926 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bdd8e998-47a1-442f-8444-a24de0bf1490', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB9E3DEE80>]}
+[0m14:10:25.481918 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'bdd8e998-47a1-442f-8444-a24de0bf1490', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BBADFBBDC0>]}
+[0m14:10:25.483925 [info ] [MainThread]: Registered adapter: snowflake=1.5.0
+[0m14:10:25.496828 [debug] [MainThread]: checksum: 44b8b5a9d2eaf7949279d1035184f95e7b9fe5352959954be3a97da5bf024fba, vars: {}, profile: , target: , version: 1.5.7
+[0m14:10:25.644920 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:10:25.645922 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:10:25.649921 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bdd8e998-47a1-442f-8444-a24de0bf1490', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BBAE0F68E0>]}
+[0m14:10:25.652918 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bdd8e998-47a1-442f-8444-a24de0bf1490', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BBAE07B550>]}
+[0m14:10:25.652918 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 325 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m14:10:25.653973 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bdd8e998-47a1-442f-8444-a24de0bf1490', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BBAE07B580>]}
+[0m14:10:25.654922 [info ] [MainThread]: 
+[0m14:10:25.655917 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m14:10:25.658908 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB_DEV'
+[0m14:10:25.671907 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_DEV"
+[0m14:10:25.671907 [debug] [ThreadPool]: On list_AIRBNB_DEV: /* {"app": "dbt", "dbt_version": "1.5.7", "profile_name": "dbt_github", "target_name": "dev", "connection_name": "list_AIRBNB_DEV"} */
+show terse objects in AIRBNB.DEV
+[0m14:10:25.671907 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:10:26.917510 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 1.0 seconds
+[0m14:10:26.919586 [debug] [ThreadPool]: On list_AIRBNB_DEV: Close
+[0m14:10:27.033336 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bdd8e998-47a1-442f-8444-a24de0bf1490', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BBAE0E65B0>]}
+[0m14:10:27.034335 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:10:27.035337 [info ] [MainThread]: 
+[0m14:10:27.043334 [debug] [Thread-1  ]: Began running node model.dbt_github.my_first_dbt_model
+[0m14:10:27.044335 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.dbt_github.my_first_dbt_model'
+[0m14:10:27.044335 [debug] [Thread-1  ]: Began compiling node model.dbt_github.my_first_dbt_model
+[0m14:10:27.050342 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_github.my_first_dbt_model"
+[0m14:10:27.053341 [debug] [Thread-1  ]: Timing info for model.dbt_github.my_first_dbt_model (compile): 14:10:27.044335 => 14:10:27.053341
+[0m14:10:27.054349 [debug] [Thread-1  ]: Began executing node model.dbt_github.my_first_dbt_model
+[0m14:10:27.054349 [debug] [Thread-1  ]: Timing info for model.dbt_github.my_first_dbt_model (execute): 14:10:27.054349 => 14:10:27.054349
+[0m14:10:27.055355 [debug] [Thread-1  ]: Finished running node model.dbt_github.my_first_dbt_model
+[0m14:10:27.056429 [debug] [Thread-1  ]: Began running node model.dbt_github.my_second_dbt_model
+[0m14:10:27.057336 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_github.my_first_dbt_model, now model.dbt_github.my_second_dbt_model)
+[0m14:10:27.057336 [debug] [Thread-1  ]: Began compiling node model.dbt_github.my_second_dbt_model
+[0m14:10:27.060430 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_github.my_second_dbt_model"
+[0m14:10:27.063336 [debug] [Thread-1  ]: Timing info for model.dbt_github.my_second_dbt_model (compile): 14:10:27.057336 => 14:10:27.062342
+[0m14:10:27.064335 [debug] [Thread-1  ]: Began executing node model.dbt_github.my_second_dbt_model
+[0m14:10:27.064335 [debug] [Thread-1  ]: Timing info for model.dbt_github.my_second_dbt_model (execute): 14:10:27.064335 => 14:10:27.064335
+[0m14:10:27.065335 [debug] [Thread-1  ]: Finished running node model.dbt_github.my_second_dbt_model
+[0m14:10:27.065335 [debug] [Thread-1  ]: Began running node test.dbt_github.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:10:27.066340 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_github.my_second_dbt_model, now test.dbt_github.not_null_my_first_dbt_model_id.5fb22c2710)
+[0m14:10:27.067337 [debug] [Thread-1  ]: Began compiling node test.dbt_github.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:10:27.078340 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_github.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m14:10:27.081347 [debug] [Thread-1  ]: Timing info for test.dbt_github.not_null_my_first_dbt_model_id.5fb22c2710 (compile): 14:10:27.067337 => 14:10:27.080357
+[0m14:10:27.081347 [debug] [Thread-1  ]: Began executing node test.dbt_github.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:10:27.082337 [debug] [Thread-1  ]: Timing info for test.dbt_github.not_null_my_first_dbt_model_id.5fb22c2710 (execute): 14:10:27.082337 => 14:10:27.082337
+[0m14:10:27.083422 [debug] [Thread-1  ]: Finished running node test.dbt_github.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:10:27.083422 [debug] [Thread-1  ]: Began running node test.dbt_github.unique_my_first_dbt_model_id.16e066b321
+[0m14:10:27.084373 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.dbt_github.not_null_my_first_dbt_model_id.5fb22c2710, now test.dbt_github.unique_my_first_dbt_model_id.16e066b321)
+[0m14:10:27.084373 [debug] [Thread-1  ]: Began compiling node test.dbt_github.unique_my_first_dbt_model_id.16e066b321
+[0m14:10:27.089431 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_github.unique_my_first_dbt_model_id.16e066b321"
+[0m14:10:27.091339 [debug] [Thread-1  ]: Timing info for test.dbt_github.unique_my_first_dbt_model_id.16e066b321 (compile): 14:10:27.084373 => 14:10:27.091339
+[0m14:10:27.091339 [debug] [Thread-1  ]: Began executing node test.dbt_github.unique_my_first_dbt_model_id.16e066b321
+[0m14:10:27.092339 [debug] [Thread-1  ]: Timing info for test.dbt_github.unique_my_first_dbt_model_id.16e066b321 (execute): 14:10:27.092339 => 14:10:27.092339
+[0m14:10:27.092339 [debug] [Thread-1  ]: Finished running node test.dbt_github.unique_my_first_dbt_model_id.16e066b321
+[0m14:10:27.093339 [debug] [Thread-1  ]: Began running node test.dbt_github.not_null_my_second_dbt_model_id.151b76d778
+[0m14:10:27.093339 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.dbt_github.unique_my_first_dbt_model_id.16e066b321, now test.dbt_github.not_null_my_second_dbt_model_id.151b76d778)
+[0m14:10:27.093339 [debug] [Thread-1  ]: Began compiling node test.dbt_github.not_null_my_second_dbt_model_id.151b76d778
+[0m14:10:27.098423 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_github.not_null_my_second_dbt_model_id.151b76d778"
+[0m14:10:27.101350 [debug] [Thread-1  ]: Timing info for test.dbt_github.not_null_my_second_dbt_model_id.151b76d778 (compile): 14:10:27.094342 => 14:10:27.100351
+[0m14:10:27.101350 [debug] [Thread-1  ]: Began executing node test.dbt_github.not_null_my_second_dbt_model_id.151b76d778
+[0m14:10:27.101350 [debug] [Thread-1  ]: Timing info for test.dbt_github.not_null_my_second_dbt_model_id.151b76d778 (execute): 14:10:27.101350 => 14:10:27.101350
+[0m14:10:27.102427 [debug] [Thread-1  ]: Finished running node test.dbt_github.not_null_my_second_dbt_model_id.151b76d778
+[0m14:10:27.102427 [debug] [Thread-1  ]: Began running node test.dbt_github.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:10:27.103337 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.dbt_github.not_null_my_second_dbt_model_id.151b76d778, now test.dbt_github.unique_my_second_dbt_model_id.57a0f8c493)
+[0m14:10:27.103337 [debug] [Thread-1  ]: Began compiling node test.dbt_github.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:10:27.106425 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_github.unique_my_second_dbt_model_id.57a0f8c493"
+[0m14:10:27.108335 [debug] [Thread-1  ]: Timing info for test.dbt_github.unique_my_second_dbt_model_id.57a0f8c493 (compile): 14:10:27.103337 => 14:10:27.108335
+[0m14:10:27.109336 [debug] [Thread-1  ]: Began executing node test.dbt_github.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:10:27.109336 [debug] [Thread-1  ]: Timing info for test.dbt_github.unique_my_second_dbt_model_id.57a0f8c493 (execute): 14:10:27.109336 => 14:10:27.109336
+[0m14:10:27.110335 [debug] [Thread-1  ]: Finished running node test.dbt_github.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:10:27.111335 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:10:27.111335 [debug] [MainThread]: Connection 'list_AIRBNB_DEV' was properly closed.
+[0m14:10:27.111335 [debug] [MainThread]: Connection 'test.dbt_github.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+[0m14:10:27.113417 [debug] [MainThread]: Command end result
+[0m14:10:27.123791 [debug] [MainThread]: Acquiring new snowflake connection 'generate_catalog'
+[0m14:10:27.124792 [info ] [MainThread]: Building catalog
+[0m14:10:27.126787 [debug] [ThreadPool]: Acquiring new snowflake connection 'AIRBNB.information_schema'
+[0m14:10:27.131787 [debug] [ThreadPool]: Using snowflake connection "AIRBNB.information_schema"
+[0m14:10:27.132787 [debug] [ThreadPool]: On AIRBNB.information_schema: /* {"app": "dbt", "dbt_version": "1.5.7", "profile_name": "dbt_github", "target_name": "dev", "connection_name": "AIRBNB.information_schema"} */
+with tables as (
+
+          select
+              table_catalog as "table_database",
+              table_schema as "table_schema",
+              table_name as "table_name",
+              table_type as "table_type",
+              comment as "table_comment",
+
+              -- note: this is the _role_ that owns the table
+              table_owner as "table_owner",
+
+              'Clustering Key' as "stats:clustering_key:label",
+              clustering_key as "stats:clustering_key:value",
+              'The key used to cluster this table' as "stats:clustering_key:description",
+              (clustering_key is not null) as "stats:clustering_key:include",
+
+              'Row Count' as "stats:row_count:label",
+              row_count as "stats:row_count:value",
+              'An approximate count of rows in this table' as "stats:row_count:description",
+              (row_count is not null) as "stats:row_count:include",
+
+              'Approximate Size' as "stats:bytes:label",
+              bytes as "stats:bytes:value",
+              'Approximate size of the table as reported by Snowflake' as "stats:bytes:description",
+              (bytes is not null) as "stats:bytes:include",
+
+              'Last Modified' as "stats:last_modified:label",
+              to_varchar(convert_timezone('UTC', last_altered), 'yyyy-mm-dd HH24:MI'||'UTC') as "stats:last_modified:value",
+              'The timestamp for last update/change' as "stats:last_modified:description",
+              (last_altered is not null and table_type='BASE TABLE') as "stats:last_modified:include"
+
+          from AIRBNB.INFORMATION_SCHEMA.tables
+
+      ),
+
+      columns as (
+
+          select
+              table_catalog as "table_database",
+              table_schema as "table_schema",
+              table_name as "table_name",
+
+              column_name as "column_name",
+              ordinal_position as "column_index",
+              data_type as "column_type",
+              comment as "column_comment"
+
+          from AIRBNB.INFORMATION_SCHEMA.columns
+      )
+
+      select *
+      from tables
+      join columns using ("table_database", "table_schema", "table_name")
+      where (upper("table_schema") = upper('dev'))
+      order by "column_index"
+[0m14:10:27.132787 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:10:29.582193 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 2.0 seconds
+[0m14:10:29.589189 [debug] [ThreadPool]: On AIRBNB.information_schema: Close
+[0m14:10:29.716562 [info ] [MainThread]: Catalog written to C:\Users\pvenkatesh\Desktop\Git_Folder\Docker_DBT\dbt_github\target\catalog.json
+[0m14:10:29.718565 [debug] [MainThread]: Command `dbt docs generate` succeeded at 14:10:29.718565 after 5.38 seconds
+[0m14:10:29.718565 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m14:10:29.718565 [debug] [MainThread]: Connection 'AIRBNB.information_schema' was properly closed.
+[0m14:10:29.719565 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB9C466280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB9CDDC640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB9CDD3250>]}
+[0m14:10:29.719565 [debug] [MainThread]: Flushing usage events
+[0m14:11:19.710803 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002334DFFC3D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002334FF8E850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002334FF8ED90>]}
+
+
+============================== 14:11:19.717618 | 4a76bd61-8e68-4a14-aec0-75c30f3879c2 ==============================
+[0m14:11:19.717618 [info ] [MainThread]: Running with dbt=1.5.7
+[0m14:11:19.718767 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\pvenkatesh\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\pvenkatesh\\Desktop\\Git_Folder\\Docker_DBT\\dbt_github\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m14:11:21.099281 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4a76bd61-8e68-4a14-aec0-75c30f3879c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002334FF8E130>]}
+[0m14:11:21.114282 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4a76bd61-8e68-4a14-aec0-75c30f3879c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002335FB6CE50>]}
+[0m14:11:21.115281 [info ] [MainThread]: Registered adapter: snowflake=1.5.0
+[0m14:11:21.128286 [debug] [MainThread]: checksum: 44b8b5a9d2eaf7949279d1035184f95e7b9fe5352959954be3a97da5bf024fba, vars: {}, profile: , target: , version: 1.5.7
+[0m14:11:21.318501 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m14:11:21.318501 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m14:11:21.323492 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4a76bd61-8e68-4a14-aec0-75c30f3879c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002335FCA6970>]}
+[0m14:11:21.327425 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4a76bd61-8e68-4a14-aec0-75c30f3879c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002335FC1C5E0>]}
+[0m14:11:21.327425 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 325 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics, 0 groups
+[0m14:11:21.328501 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4a76bd61-8e68-4a14-aec0-75c30f3879c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002335FC1C610>]}
+[0m14:11:21.329413 [info ] [MainThread]: 
+[0m14:11:21.331413 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m14:11:21.334413 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_AIRBNB_DEV'
+[0m14:11:21.345520 [debug] [ThreadPool]: Using snowflake connection "list_AIRBNB_DEV"
+[0m14:11:21.346520 [debug] [ThreadPool]: On list_AIRBNB_DEV: /* {"app": "dbt", "dbt_version": "1.5.7", "profile_name": "dbt_github", "target_name": "dev", "connection_name": "list_AIRBNB_DEV"} */
+show terse objects in AIRBNB.DEV
+[0m14:11:21.346520 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:11:22.596637 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 1.0 seconds
+[0m14:11:22.597639 [debug] [ThreadPool]: On list_AIRBNB_DEV: Close
+[0m14:11:22.716360 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4a76bd61-8e68-4a14-aec0-75c30f3879c2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002335FC95850>]}
+[0m14:11:22.717368 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m14:11:22.718362 [info ] [MainThread]: 
+[0m14:11:22.729370 [debug] [Thread-1  ]: Began running node model.dbt_github.my_first_dbt_model
+[0m14:11:22.730378 [debug] [Thread-1  ]: Acquiring new snowflake connection 'model.dbt_github.my_first_dbt_model'
+[0m14:11:22.731377 [debug] [Thread-1  ]: Began compiling node model.dbt_github.my_first_dbt_model
+[0m14:11:22.741704 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_github.my_first_dbt_model"
+[0m14:11:22.743712 [debug] [Thread-1  ]: Timing info for model.dbt_github.my_first_dbt_model (compile): 14:11:22.731377 => 14:11:22.743712
+[0m14:11:22.744877 [debug] [Thread-1  ]: Began executing node model.dbt_github.my_first_dbt_model
+[0m14:11:22.744877 [debug] [Thread-1  ]: Timing info for model.dbt_github.my_first_dbt_model (execute): 14:11:22.744877 => 14:11:22.744877
+[0m14:11:22.745885 [debug] [Thread-1  ]: Finished running node model.dbt_github.my_first_dbt_model
+[0m14:11:22.746883 [debug] [Thread-1  ]: Began running node model.dbt_github.my_second_dbt_model
+[0m14:11:22.746883 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_github.my_first_dbt_model, now model.dbt_github.my_second_dbt_model)
+[0m14:11:22.747885 [debug] [Thread-1  ]: Began compiling node model.dbt_github.my_second_dbt_model
+[0m14:11:22.750881 [debug] [Thread-1  ]: Writing injected SQL for node "model.dbt_github.my_second_dbt_model"
+[0m14:11:22.753892 [debug] [Thread-1  ]: Timing info for model.dbt_github.my_second_dbt_model (compile): 14:11:22.747885 => 14:11:22.753892
+[0m14:11:22.754883 [debug] [Thread-1  ]: Began executing node model.dbt_github.my_second_dbt_model
+[0m14:11:22.754883 [debug] [Thread-1  ]: Timing info for model.dbt_github.my_second_dbt_model (execute): 14:11:22.754883 => 14:11:22.754883
+[0m14:11:22.755885 [debug] [Thread-1  ]: Finished running node model.dbt_github.my_second_dbt_model
+[0m14:11:22.756886 [debug] [Thread-1  ]: Began running node test.dbt_github.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:11:22.756886 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly model.dbt_github.my_second_dbt_model, now test.dbt_github.not_null_my_first_dbt_model_id.5fb22c2710)
+[0m14:11:22.757884 [debug] [Thread-1  ]: Began compiling node test.dbt_github.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:11:22.771882 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_github.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m14:11:22.773886 [debug] [Thread-1  ]: Timing info for test.dbt_github.not_null_my_first_dbt_model_id.5fb22c2710 (compile): 14:11:22.757884 => 14:11:22.773886
+[0m14:11:22.773886 [debug] [Thread-1  ]: Began executing node test.dbt_github.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:11:22.774894 [debug] [Thread-1  ]: Timing info for test.dbt_github.not_null_my_first_dbt_model_id.5fb22c2710 (execute): 14:11:22.774894 => 14:11:22.774894
+[0m14:11:22.775887 [debug] [Thread-1  ]: Finished running node test.dbt_github.not_null_my_first_dbt_model_id.5fb22c2710
+[0m14:11:22.775887 [debug] [Thread-1  ]: Began running node test.dbt_github.unique_my_first_dbt_model_id.16e066b321
+[0m14:11:22.776885 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.dbt_github.not_null_my_first_dbt_model_id.5fb22c2710, now test.dbt_github.unique_my_first_dbt_model_id.16e066b321)
+[0m14:11:22.776885 [debug] [Thread-1  ]: Began compiling node test.dbt_github.unique_my_first_dbt_model_id.16e066b321
+[0m14:11:22.784884 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_github.unique_my_first_dbt_model_id.16e066b321"
+[0m14:11:22.789884 [debug] [Thread-1  ]: Timing info for test.dbt_github.unique_my_first_dbt_model_id.16e066b321 (compile): 14:11:22.777904 => 14:11:22.789884
+[0m14:11:22.790883 [debug] [Thread-1  ]: Began executing node test.dbt_github.unique_my_first_dbt_model_id.16e066b321
+[0m14:11:22.790883 [debug] [Thread-1  ]: Timing info for test.dbt_github.unique_my_first_dbt_model_id.16e066b321 (execute): 14:11:22.790883 => 14:11:22.790883
+[0m14:11:22.792882 [debug] [Thread-1  ]: Finished running node test.dbt_github.unique_my_first_dbt_model_id.16e066b321
+[0m14:11:22.792882 [debug] [Thread-1  ]: Began running node test.dbt_github.not_null_my_second_dbt_model_id.151b76d778
+[0m14:11:22.793883 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.dbt_github.unique_my_first_dbt_model_id.16e066b321, now test.dbt_github.not_null_my_second_dbt_model_id.151b76d778)
+[0m14:11:22.793883 [debug] [Thread-1  ]: Began compiling node test.dbt_github.not_null_my_second_dbt_model_id.151b76d778
+[0m14:11:22.799271 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_github.not_null_my_second_dbt_model_id.151b76d778"
+[0m14:11:22.801273 [debug] [Thread-1  ]: Timing info for test.dbt_github.not_null_my_second_dbt_model_id.151b76d778 (compile): 14:11:22.794887 => 14:11:22.800275
+[0m14:11:22.801273 [debug] [Thread-1  ]: Began executing node test.dbt_github.not_null_my_second_dbt_model_id.151b76d778
+[0m14:11:22.802273 [debug] [Thread-1  ]: Timing info for test.dbt_github.not_null_my_second_dbt_model_id.151b76d778 (execute): 14:11:22.802273 => 14:11:22.802273
+[0m14:11:22.803272 [debug] [Thread-1  ]: Finished running node test.dbt_github.not_null_my_second_dbt_model_id.151b76d778
+[0m14:11:22.803272 [debug] [Thread-1  ]: Began running node test.dbt_github.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:11:22.803272 [debug] [Thread-1  ]: Re-using an available connection from the pool (formerly test.dbt_github.not_null_my_second_dbt_model_id.151b76d778, now test.dbt_github.unique_my_second_dbt_model_id.57a0f8c493)
+[0m14:11:22.804273 [debug] [Thread-1  ]: Began compiling node test.dbt_github.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:11:22.807273 [debug] [Thread-1  ]: Writing injected SQL for node "test.dbt_github.unique_my_second_dbt_model_id.57a0f8c493"
+[0m14:11:22.809291 [debug] [Thread-1  ]: Timing info for test.dbt_github.unique_my_second_dbt_model_id.57a0f8c493 (compile): 14:11:22.804273 => 14:11:22.809291
+[0m14:11:22.809291 [debug] [Thread-1  ]: Began executing node test.dbt_github.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:11:22.810269 [debug] [Thread-1  ]: Timing info for test.dbt_github.unique_my_second_dbt_model_id.57a0f8c493 (execute): 14:11:22.810269 => 14:11:22.810269
+[0m14:11:22.810269 [debug] [Thread-1  ]: Finished running node test.dbt_github.unique_my_second_dbt_model_id.57a0f8c493
+[0m14:11:22.811287 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m14:11:22.812288 [debug] [MainThread]: Connection 'list_AIRBNB_DEV' was properly closed.
+[0m14:11:22.812288 [debug] [MainThread]: Connection 'test.dbt_github.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+[0m14:11:22.813273 [debug] [MainThread]: Command end result
+[0m14:11:22.824269 [debug] [MainThread]: Acquiring new snowflake connection 'generate_catalog'
+[0m14:11:22.825270 [info ] [MainThread]: Building catalog
+[0m14:11:22.826270 [debug] [ThreadPool]: Acquiring new snowflake connection 'AIRBNB.information_schema'
+[0m14:11:22.832279 [debug] [ThreadPool]: Using snowflake connection "AIRBNB.information_schema"
+[0m14:11:22.833296 [debug] [ThreadPool]: On AIRBNB.information_schema: /* {"app": "dbt", "dbt_version": "1.5.7", "profile_name": "dbt_github", "target_name": "dev", "connection_name": "AIRBNB.information_schema"} */
+with tables as (
+
+          select
+              table_catalog as "table_database",
+              table_schema as "table_schema",
+              table_name as "table_name",
+              table_type as "table_type",
+              comment as "table_comment",
+
+              -- note: this is the _role_ that owns the table
+              table_owner as "table_owner",
+
+              'Clustering Key' as "stats:clustering_key:label",
+              clustering_key as "stats:clustering_key:value",
+              'The key used to cluster this table' as "stats:clustering_key:description",
+              (clustering_key is not null) as "stats:clustering_key:include",
+
+              'Row Count' as "stats:row_count:label",
+              row_count as "stats:row_count:value",
+              'An approximate count of rows in this table' as "stats:row_count:description",
+              (row_count is not null) as "stats:row_count:include",
+
+              'Approximate Size' as "stats:bytes:label",
+              bytes as "stats:bytes:value",
+              'Approximate size of the table as reported by Snowflake' as "stats:bytes:description",
+              (bytes is not null) as "stats:bytes:include",
+
+              'Last Modified' as "stats:last_modified:label",
+              to_varchar(convert_timezone('UTC', last_altered), 'yyyy-mm-dd HH24:MI'||'UTC') as "stats:last_modified:value",
+              'The timestamp for last update/change' as "stats:last_modified:description",
+              (last_altered is not null and table_type='BASE TABLE') as "stats:last_modified:include"
+
+          from AIRBNB.INFORMATION_SCHEMA.tables
+
+      ),
+
+      columns as (
+
+          select
+              table_catalog as "table_database",
+              table_schema as "table_schema",
+              table_name as "table_name",
+
+              column_name as "column_name",
+              ordinal_position as "column_index",
+              data_type as "column_type",
+              comment as "column_comment"
+
+          from AIRBNB.INFORMATION_SCHEMA.columns
+      )
+
+      select *
+      from tables
+      join columns using ("table_database", "table_schema", "table_name")
+      where (upper("table_schema") = upper('dev'))
+      order by "column_index"
+[0m14:11:22.833296 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m14:11:25.313556 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 2.0 seconds
+[0m14:11:25.321475 [debug] [ThreadPool]: On AIRBNB.information_schema: Close
+[0m14:11:25.447362 [info ] [MainThread]: Catalog written to C:\Users\pvenkatesh\Desktop\Git_Folder\Docker_DBT\dbt_github\target\catalog.json
+[0m14:11:25.449375 [debug] [MainThread]: Command `dbt docs generate` succeeded at 14:11:25.448362 after 5.75 seconds
+[0m14:11:25.449375 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m14:11:25.449375 [debug] [MainThread]: Connection 'AIRBNB.information_schema' was properly closed.
+[0m14:11:25.449375 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002334DFFC3D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002335FB8B0A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002335FCA6AC0>]}
+[0m14:11:25.450362 [debug] [MainThread]: Flushing usage events
