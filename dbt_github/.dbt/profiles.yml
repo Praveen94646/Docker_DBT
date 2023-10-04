@@ -10,6 +10,7 @@ dbt_github:
       type: snowflake
       user: dbt
       warehouse: COMPUTE_WH
+      target-path: '$GITHUB_WORKSPACE/dbt_github/target'
   target: dev
 dbtlearn:
   outputs:
