@@ -40,6 +40,10 @@ jobs:
         run: |
           dbt seed --profiles-dir /__w/Docker_DBT/Docker_DBT/dbt_github/.dbt
           dbt docs generate --profiles-dir /__w/Docker_DBT/Docker_DBT/dbt_github/.dbt
+      
+      - name: install git
+        run: RUN apt-get update && apt-get install -y git
+
       - name: Stage Changes
         run: |
           git add .
