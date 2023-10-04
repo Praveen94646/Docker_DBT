@@ -1,5 +1,5 @@
 git pull
 git add .
 git status
-git commit -m 'generating document'
+git commit -m 'installing git'
 git push
