@@ -38,6 +38,7 @@ jobs:
 
       - name: showing doc
         run: |
+          ls
           cd /__w/Docker_DBT/Docker_DBT/dbt_github dbt help
           dbt seed
           dbt test
