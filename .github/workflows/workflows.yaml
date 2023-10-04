@@ -34,7 +34,6 @@ jobs:
         run: pwd  
 
       - name: showing docs
-        working-directory: ./dbt_github
         run: |
           ls
           dbt seed 
