@@ -44,7 +44,7 @@ jobs:
 
       - name: install git
         run: |
-          apt-get update && apt-get install git
+          apt-get update && apt-get install -y git
           git status
 
       # - name: Stage Changes
