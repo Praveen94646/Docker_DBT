@@ -26,13 +26,15 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      - name: showing docs
-        # working-directory: ./dbt_github
-        run: |
-          ls
-          dbt seed 
-          dbt docs generate 
+      - name: current directory
+        run: pwd  
 
+      # - name: showing docs
+      #   # working-directory: ./dbt_github
+      #   run: |
+      #     ls
+      #     dbt seed 
+      #     dbt docs generate 
 # --profiles-dir /__w/Docker_DBT/Docker_DBT/dbt_github/.dbt
 
       - name: install git
