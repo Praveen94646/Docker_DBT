@@ -8,8 +8,6 @@ on:
   push:
     branches:
       - main
-    paths-ignore:
-      - .github/workflows/**
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -42,7 +40,7 @@ jobs:
           dbt docs generate --profiles-dir /__w/Docker_DBT/Docker_DBT/dbt_github/.dbt
       
       - name: install git
-        run: RUN apt-get update && apt-get install -y git
+        run: apt-get update && apt-get install -y git
 
       - name: Stage Changes
         run: |
@@ -50,3 +48,7 @@ jobs:
           git status
           git commit -m 'pushed the files to target'
           git push
+          if [[ $(git log -1 --pretty=%B) == *"[skip ci]"* ]]; then
+            echo "Skipping CI/CD."
+            exit 0
+          fi
