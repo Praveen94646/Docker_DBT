@@ -48,4 +48,5 @@ jobs:
         run: |
           git add .
           git status
+          git commit -m 'pushed the files to target'
           git push
