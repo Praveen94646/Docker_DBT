@@ -38,6 +38,6 @@ jobs:
         run: |
           ls
           dbt -h
-          dbt seed
+          dbt seed --project-dir /github/home/dbt_github/.dbt
           dbt test
           dbt docs generate
