@@ -37,6 +37,6 @@ jobs:
         working-directory: ./dbt_github
         run: |
           ls
-          dbt seed --project-dir /__w/Docker_DBT/Docker_DBT/dbt_github/dbt_project.yml --profiles-dir /__w/Docker_DBT/Docker_DBT/dbt_github/dbt_project.yml
+          dbt seed 
           dbt test
           dbt docs generate
