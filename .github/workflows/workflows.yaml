@@ -33,6 +33,11 @@ jobs:
       - name: current directory
         run: pwd  
 
-      - name: initializing dbt
+      - name: change directory to the dbt folder
+        run: cd dbt_github
+
+      - name: showing doc
         run: |
-           dbt init
+           dbt seed
+           dbt test
+           dbt docs generate
