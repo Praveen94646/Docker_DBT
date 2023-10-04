@@ -26,16 +26,6 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-        with:
-          path: /$GITHUB_WORKSPACE
-
-      # Runs a single command using the runners shell
-      - name: change directory
-        run: cd $GITHUB_WORKSPACE
-
-      - name: current directory
-        run: cd /github/home  
-
       - name: showing docs
         # working-directory: ./dbt_github
         run: |
@@ -44,11 +34,6 @@ jobs:
           dbt docs generate 
 
 # --profiles-dir /__w/Docker_DBT/Docker_DBT/dbt_github/.dbt
-      
-      - name: change directory
-        run: |
-          cd /$GITHUB_WORKSPACE/
-          pwd
 
       - name: install git
         run: |
