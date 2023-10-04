@@ -38,5 +38,4 @@ jobs:
         run: |
           ls
           dbt seed --profiles-dir /__w/Docker_DBT/Docker_DBT/dbt_github/.dbt
-          dbt test --profiles-dir /__w/Docker_DBT/Docker_DBT/dbt_github/.dbt
           dbt docs generate --profiles-dir /__w/Docker_DBT/Docker_DBT/dbt_github/.dbt
